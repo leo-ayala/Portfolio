@@ -8,6 +8,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 60px;
 }
 header a {
     text-decoration: none;
@@ -18,7 +19,7 @@ header a {
 header h1 {
     font-weight: bold;
     color: darkcyan;
-    margin: 10px;
+    margin: 10px 10px 10px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header nav {
@@ -26,15 +27,30 @@ header nav {
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    
 }
 nav {
     display: flex;
     flex-direction: row;
 }
+nav a {
+    margin-right: 15px;
+    font-size: large;
+    
+}
 .hero-banner {
-    background-image: url(./images/keyboard.jpg);
+    background: khaki;
+    background-image: url(../images/computer.jpg);
     background-size: cover;
     background-position: center;
     justify-content: flex-end;
     align-items: flex-end;
+    text-align: right;
+    padding: 10px 0 10px 0;
+    height: 220px;
+}
+.hero-banner img {
+    height: 200px;
+    border: solid;
+    margin-right: 12px;
 }
