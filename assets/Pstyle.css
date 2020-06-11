@@ -3,16 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header {
+header {
     background-color: khaki;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.header a {
+header a {
     text-decoration: none;
     color: darkcyan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-around;
 }
-.header h1 {
+header h1 {
     font-weight: bold;
     color: darkcyan;
     margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.hero-banner {
+    background-image: url(./images/keyboard.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
