@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    color: darkcyan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+body p {
+    color: black;
+}
+
 header {
     background-color: khaki;
     display: flex;
@@ -36,6 +47,7 @@ nav {
 nav a {
     margin-right: 15px;
     font-size: large;
+    border-bottom: solid;
     
 }
 .hero-banner {
@@ -53,4 +65,38 @@ nav a {
     height: 200px;
     border: solid;
     margin-right: 12px;
+    border-radius: 8px;
 }
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .page-section h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: solid;
+  }
+  .page-section > div {
+    flex: 0 0 77%;
+  }
+  .page-section p {
+    margin-bottom: 20px;
+  }
+  .page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
