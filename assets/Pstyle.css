@@ -5,6 +5,7 @@
 }
 body {
     color: darkcyan;
+    background-color: #FFFEF0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     margin: 0;
@@ -19,7 +20,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
 }
 header a {
     text-decoration: none;
@@ -28,7 +29,8 @@ header a {
     justify-content: space-around;
 }
 header h1 {
-    font-weight: bold;
+    font-weight: 50px;
+    font-size: xx-large;
     color: darkcyan;
     margin: 10px 10px 10px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,11 +47,17 @@ nav {
     flex-direction: row;
 }
 nav a {
-    margin-right: 15px;
-    font-size: large;
-    border-bottom: solid;
-    
+    margin-right: 20px;
+    font-size: larger;
+    padding: 5px;
+    box-shadow: 5px 5px;
+    background-color: khaki;
 }
+nav a:hover, a:focus {
+    color: khaki;
+    background-color: darkcyan;
+}
+
 .hero-banner {
     background: khaki;
     background-image: url(../images/computer.jpg);
@@ -66,6 +74,7 @@ nav a {
     border: solid;
     margin-right: 12px;
     border-radius: 8px;
+    border-color: black;
 }
 .page-section {
     margin: 25px 0;
@@ -80,7 +89,8 @@ nav a {
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
-    border-right: solid;
+    border-right: inset 5px;
+    font-size: xx-large;
   }
   .page-section > div {
     flex: 0 0 77%;
