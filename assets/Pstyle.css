@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-}
+    }  
 body p {
     color: black;
 }
@@ -32,7 +32,7 @@ header h1 {
     font-weight: 50px;
     font-size: xx-large;
     color: darkcyan;
-    margin: 10px 10px 10px 20px;
+    margin: 10px 10px 10px 79px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header nav {
@@ -54,7 +54,7 @@ nav a {
     background-color: khaki;
 }
 nav a:hover, a:focus {
-    color: khaki;
+    color: #f0e68c;
     background-color: darkcyan;
 }
 
@@ -64,15 +64,15 @@ nav a:hover, a:focus {
     background-size: cover;
     background-position: center;
     justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
+    align-items: flex-start;
+    text-align: left;
     padding: 10px 0 10px 0;
     height: 220px;
 }
 .hero-banner img {
     height: 200px;
     border: solid;
-    margin-right: 12px;
+    margin-left: 80px;
     border-radius: 8px;
     border-color: black;
 }
@@ -103,6 +103,9 @@ nav a:hover, a:focus {
     margin-left: auto;
     margin-right: auto;
   }
+  #About ul {
+      color: black;
+  }
   .contact address {
     display: flex;
     flex-wrap: wrap;
@@ -110,3 +113,16 @@ nav a:hover, a:focus {
     align-items: center;
     height: 100%;
   }
+  .contact a{
+    text-decoration: none;
+    font-style: normal;
+    font-size: larger;
+    color: black;
+    box-shadow: 5px 5px;
+    padding: 5px;
+    background-color: #FFFEF0;
+  }
+  address a:hover {
+    color: #FFFEF0;
+    background-color: black;
+}
