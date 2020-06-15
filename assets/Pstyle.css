@@ -136,7 +136,10 @@ nav a:hover, a:focus {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-
+.grid-item:first-child {
+    grid-column: span 6;
+    grid-row: span 2;
+}
 
   .contact address {
     display: flex;
@@ -159,3 +162,44 @@ nav a:hover, a:focus {
     color: #FFFEF0;
     background-color: black;
 }
+@media screen and (max-width: 900px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 8vw;
+    }
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 5px solid darkcyan;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .grid-item,
+    .grid-item:first-child {
+      grid-column: 1 / -1;
+    }
+    .grid-container {
+      grid-auto-rows: minmax(200px, 1fr);
+    }
+    .hero-banner {
+      text-align: center;
+    }
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
