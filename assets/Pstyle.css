@@ -117,29 +117,53 @@ nav a:hover, a:focus {
     grid-auto-rows: minmax(150px, 1fr);
 }
 .grid-item {
-    grid-column: span 4;
+    grid-column: span 6;
     border: solid 5px darkcyan;
     border-radius: 8px;
     display: flex;
     text-decoration: none;
-    align-items: flex-start;
-    min-height: 150px;
-    padding-top: 20px;
+    align-items: center;
+    min-height: 220px;
+    padding-top: 10px;
     color: darkcyan;
 }
 .grid-item div {
     background-color: khaki;
+    background-image: ;
     padding: 8px 10px;
     border-top: solid 5px;
     border-bottom: solid 5px;
     border-right: solid 5px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    max-width: 200px;
 }
-.grid-item:first-child {
+.img1 {
+  background-image: url(../images/Screen\ Shot.Task.png);
+  width: 100%;
+  background-size: cover;
+}
+.img2 {
+  background-image: url(../images/Screen\ Shot.WorkSch.png);
+  width: 100%;
+  background-size: cover;
+}
+.img3 {
+  background-image: url(../images/ScreenShot.Weather.png);
+  width: 100%;
+  background-size: cover;
+}
+.img4 {
+  background-image: url(../images/Screen\ Shot.Pass.png);
+  width: 100%;
+  background-size: cover;
+}
+/* .grid-item:first-child {
     grid-column: span 6;
     grid-row: span 2;
-}
+    background-image: url(../images/Screen\ Shot.Task.png);
+    background-image:;
+  } */
 
   .contact address {
     display: flex;
