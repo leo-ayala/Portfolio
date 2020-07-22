@@ -158,6 +158,11 @@ nav a:hover, a:focus {
   width: 100%;
   background-size: cover;
 }
+.img-f {
+  background-image: url(../images/Food\ and\ Fun.png);
+  width: 100%;
+  background-size: cover;
+}
 /* .grid-item:first-child {
     grid-column: span 6;
     grid-row: span 2;
