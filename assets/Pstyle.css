@@ -129,7 +129,7 @@ nav a:hover, a:focus {
 }
 .grid-item div {
     background-color: khaki;
-    background-image: ;
+    /* background-image: ; */
     padding: 8px 10px;
     border-top: solid 5px;
     border-bottom: solid 5px;
@@ -163,12 +163,12 @@ nav a:hover, a:focus {
   width: 100%;
   background-size: cover;
 }
-/* .grid-item:first-child {
+.grid-item:first-child {
     grid-column: span 6;
     grid-row: span 2;
-    background-image: url(../images/Screen\ Shot.Task.png);
-    background-image:;
-  } */
+    background-image: url(../images/Drinkology\ copy.png);
+    background-image: cover;
+  }
 
   .contact address {
     display: flex;
