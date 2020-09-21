@@ -139,12 +139,12 @@ nav a:hover, a:focus {
     max-width: 200px;
 }
 .img1 {
-  background-image: url(../images/Screen\ Shot.Task.png);
+  background-image: url(../images/Taskinator.png);
   width: 100%;
   background-size: cover;
 }
 .img2 {
-  background-image: url(../images/Screen\ Shot.WorkSch.png);
+  background-image: url(../images/WorkDay.png);
   width: 100%;
   background-size: cover;
 }
@@ -154,12 +154,12 @@ nav a:hover, a:focus {
   background-size: cover;
 }
 .img4 {
-  background-image: url(../images/Screen\ Shot.Pass.png);
+  background-image: url(../images/Password.png);
   width: 100%;
   background-size: cover;
 }
 .img-f {
-  background-image: url(../images/Food\ and\ Fun.png);
+  background-image: url(../images/FoodnFun.png);
   width: 100%;
   background-size: cover;
 }
