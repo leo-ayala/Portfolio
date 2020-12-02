@@ -76,6 +76,10 @@ a:focus {
   background: url("../images/matrix.gif");
   color: white;
   list-style: white;
+  
+}
+.matrix-mode p, .matrix-mode li{
+  color: #ffffff;
 }
 
 .hero-banner {
