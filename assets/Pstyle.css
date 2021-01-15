@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  color: darkcyan;
-  background-color: rgb(225, 225, 225);
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   margin: 0;
@@ -18,7 +17,7 @@ body p {
 }
 
 header {
-  background-color: rgb(225, 225, 225);
+  background-color:rgba(0, 0, 0, 0.4);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -26,14 +25,13 @@ header {
 }
 header a {
   text-decoration: none;
-  color: darkcyan;
+  color: cornflowerblue;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-around;
 }
 header h1 {
   font-weight: 50px;
   font-size: xx-large;
-  color: darkcyan;
   margin: 10px 10px 10px 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -76,28 +74,119 @@ a:focus {
   background: url("../images/matrix.gif");
   color: white;
   list-style: white;
-  
 }
-.matrix-mode p, .matrix-mode li{
+.matrix-mode p,
+.matrix-mode li {
   color: #ffffff;
 }
 
-.hero-banner {
-  background-image: url(../images/computer.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 10px 0 10px 0;
-  height: 220px;
+.holder {
+  align-items: center;
   display: flex;
-  justify-content: flex-end;
 }
-.hero-banner img {
-  height: 200px;
-  border: solid;
-  margin-right: 125px;
-  border-radius: 8px;
+
+.selfie img{
+  border:  solid thick;
   border-color: black;
+  border-radius: 5px;
+  height: 410px;
+  z-index: 999;
+
 }
+
+.hero-banner {
+  z-index: -1;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transform-origin: right;
+  animation:  colorChange 5s linear infinite;
+}
+.reverse {
+  transform-origin: left;
+}
+@keyframes colorChange {
+  0% {
+    filter:hue-rotate(0deg);
+    transform: rotate(0deg)
+  }
+  100% {
+    filter: hue-rotate(400deg);
+    transform: rotate(360deg);
+  }
+}
+
+.hero-banner span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+.hero-banner span:before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -8px;
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  border-radius:40%;
+}
+.hero-banner span:nth-child(3n + 1):before {
+  background: rgba(134, 255, 0, 1);
+  box-shadow: 0 0 20px rgba(134, 255, 0, 1),
+              0 0 40px rgba(134, 255, 0, 1),
+              0 0 60px rgba(134, 255, 0, 1),
+              0 0 80px rgba(134, 255, 0, 1),
+              0 0 0 8px rgba(134, 255, 0, .1),
+}
+.hero-banner span:nth-child(3n + 2):before {
+  background: rgba(255, 214, 0, 1);
+  box-shadow: 0 0 20px rgba(255, 214, 0, 1),
+              0 0 40px rgba(255, 214, 0, 1),
+              0 0 60px rgba(255, 214, 0, 1),
+              0 0 80px rgba(255, 214, 0, 1),
+              0 0 0 8px rgba(255, 214, 0, .1),
+}
+.hero-banner span:nth-child(3n + 3):before {
+  background: rgba(0, 226, 255, 1);
+  box-shadow: 0 0 20px rgba(0, 226, 255, 1),
+              0 0 40px rgba(0, 226, 255, 1),
+              0 0 60px rgba(0, 226, 255, 1),
+              0 0 80px rgba(0, 226, 255, 1),
+              0 0 0 8px rgba(0, 226, 255, .1),
+}
+.hero-banner span:nth-child(3n + 1) {
+  animation: animate 8s alternate infinite;
+}
+.hero-banner span:nth-child(3n + 2) {
+  animation: animate-reverse 14s alternate infinite;
+}
+.hero-banner span:nth-child(3n + 3) {
+  animation: animate 5s alternate infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1360deg);
+  }
+}
+
+
 .page-section {
   margin: 25px 0;
   padding: 10px 0;
@@ -151,13 +240,12 @@ a:focus {
   min-height: 250px;
   padding-top: 10px;
   color: rgb(10, 10, 10);
-  transition: .15s;
+  transition: 0.15s;
 }
 
 .grid-item:hover {
-  transform: translateY(-10px);  
+  transform: translateY(-10px);
 }
-
 
 .grid-item div {
   background-color: rgb(209, 209, 241);
@@ -237,7 +325,7 @@ span ul li a:visited {
 
 span ul li a .fa {
   font-size: 4em;
-  color: lightseagreen;
+  color:rgba(0, 0, 0, 0.4);
 }
 
 span ul li::before {
